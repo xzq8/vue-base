@@ -15,5 +15,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="stylus" scoped>
+.user-info
+  margin 0 .1rem
 </style>

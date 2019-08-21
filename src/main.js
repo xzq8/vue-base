@@ -2,12 +2,13 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import { Button, Field  } from 'mint-ui'
+import { Button, Field,InfiniteScroll } from 'mint-ui'
 
 import "./registerServiceWorker";
 import "./assets/js/rem"
 import "./assets/css/base.css"
 import Header from "./components/Header"
+import SildeBar from "./components/SildeBar"
 
 Vue.config.productionTip = false;
 
@@ -16,9 +17,11 @@ Vue.config.productionTip = false;
 //   Vue.component(`v${name}`, components[key])
 // })
 Vue.component(Header.name,Header)
+Vue.component(SildeBar.name,SildeBar)
+
 Vue.component(Button.name, Button);
 Vue.component(Field.name, Field);
-
+Vue.use(InfiniteScroll);
 // router.beforeEach(({meta, path}, from, next) => {
 //   var { auth = true } = meta
 //   var isLogin = Boolean(store.state.user) //true用户已登录， false用户未登录

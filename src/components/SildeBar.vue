@@ -36,4 +36,19 @@ export default {
     z-index 9
     &.show
         transform translateX(4rem)
+    >.list-ul
+        margin 0 .48rem
+        border-top 1px solid #d4d4d4
+        overflow hidden
+        padding-top 1rem
+        > .item 
+            display: block
+            font-size: 14px
+            font-weight: 200
+            padding: 9% 0
+            text-align: left
+            text-indent: 1px
+            line-height: 15px
+            color: #313131
+            font-weight: 700
 </style>
