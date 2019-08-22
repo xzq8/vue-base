@@ -2,7 +2,7 @@
   <section id="page">
     <ul class="posts-list">
       <li v-for="(item,index) in datas" :key="index">
-        <router-link to="{name:'topic',params:{id:item.author_id}}">
+        <router-link :to="{path:'topic',query:{id:item.author_id}}">
           <h3 title="置顶" class="top">{{item.title}}</h3>
           <div class="content">
             <img :src="item.author.loginname" class="avatar" />
